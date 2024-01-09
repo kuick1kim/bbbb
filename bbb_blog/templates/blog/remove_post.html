@@ -1,0 +1,6 @@
+<!-- remove_post.html -->
+<form method="post" action="{% url 'remove_post' post.get_absolute_url3 %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Remove Post</button>
+</form>
